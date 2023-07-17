@@ -1,0 +1,189 @@
+body {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614369444_13-p-svetlo-fioletovii-odnotonnii-fon-17.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.Header {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.quiz {
+  position: relative;
+}
+
+.question {
+  margin-top: -10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.categoryName {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.count {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.menu,
+.quiz,
+.endScreen {
+  position: absolute;
+  top: 15%;
+  height: 60vh;
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.menu button,
+.quiz button,
+.endScreen button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel {
+  background-color: rgb(233, 77, 77);
+}
+
+.quiz {
+  flex-wrap: wrap;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.finish {
+  position: absolute;
+  top: 85%;
+  right: 13px;
+}
+
+.cancel {
+  position: absolute;
+  top: 85%;
+  left: 13px;
+}
+
+.restart {
+  position: absolute;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  position: absolute;
+  top: 35px;
+  left: 40%;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.score {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media (max-width: 1180px) {
+  .menu,
+  .quiz,
+  .endScreen {
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .finish button {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .cancel {
+    width: 400px;
+  }
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalContent {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  height: 200px;
+  width: 400px;
+  transform: scale(0.5);
+  transition: 0.4s;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.modalContent.active {
+  transform: scale(1);
+}/*# sourceMappingURL=style.css.map */
